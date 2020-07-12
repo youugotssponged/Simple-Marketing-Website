@@ -1,0 +1,760 @@
+﻿<!--
+    File: product.html
+    Name: Jordan McCann
+    Student ID: 23571144
+-->
+
+<!-- This is the product page -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Sets the browser tab title -->
+        <title>ROBOT JUICE - PRODUCTS</title>
+
+        <!-- CSS IMPORTS -->
+
+        <link rel="stylesheet" href="grid.css"> <!-- 12 grid layout format -->
+        <link href="https://fonts.googleapis.com/css?family=Iceberg" rel="stylesheet"> <!-- Google font -->
+        <link rel="stylesheet" href="style.css"> <!-- Used to style the page -->
+
+        <!-- JS IMPORTS -->
+        <script src="reviews.js"></script><!-- loads review section functionality -->
+    </head>
+    <body>
+        <div class="grid-container"> <!-- All content will be inside here, as the grid-container class manages the layout-->
+            <div class="grid-x">
+
+                <!-- Logo / Header Area -->
+                <div class="cell small-4">
+                    <header class="logo">
+                        <img src="img/logo.png" width="100%;" alt="HeroImg">
+                    </header>
+                </div>
+
+                <div class="cell small-8" style="font-size: 0;"> <!-- SPACER -->
+                    8 celled Spacer
+                </div>
+
+                <!-- Top Border -->
+                <div class="cell small-12" id="top_border"></div>
+
+                <!-- NAVIGATION BAR -->
+                <a href="index.html" class="cell small-2 navbar navdivider"><p>Home</p></a>
+                <a href="product.html" class="cell small-2 navbar navdivider" id="selected"><p>Products</p></a>
+                <a href="" class="cell small-2 navbar navdivider"><p>Protect</p></a>
+                <a href="" class="cell small-2 navbar navdivider"><p>Stockists</p></a>
+                <a href="" class="cell small-2 navbar navdivider"><p>Events</p></a>
+                <a href="" class="cell small-2 navbar"><p>Reviews</p></a>
+
+                <!-- Top Border -->
+                <div class="cell small-12" id="top_border" style="padding-bottom: 30px;"></div>
+
+                <!-- Small image section beside main selected image -->
+                <div class="cell small-1">
+                    <div class="cell small-12" style="padding-bottom: 20px;">
+                        <img src="img/product_small_1.png" alt="product 1">
+                    </div>
+
+                    <div class="cell small-12" style="padding-bottom: 20px;">
+                        <img src="img/product_small_2.png" alt="product 2">
+                    </div>
+
+                    <div class="cell small-12" style="padding-bottom: 20px;">
+                        <img src="img/product_small_3.png" alt="product 3">
+                    </div>
+                </div>
+
+                <!-- Main Product image -->
+                <div class="cell small-7" style="padding-left: 60px;">
+                    <img src="img/product_main.png" width="100%" height="100%" alt="main product image">
+                </div>
+
+                <!-- Drop down menu and info section of the product -->
+                <div class="cell small-4">
+                    <h2 class="product_heading">Bike Oil</h2>
+                    <h2 class="pricing">£99.99</h2>
+
+                    <!-- Drop Down Menus -->
+                    <form>
+                        <!-- Drop down menu for product size -->
+                        <select name="Size" id="product_dropdown">
+                            <option selected disabled hidden>Size</option>
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                            <option value="xlarge">XL</option>
+                            <option value="xxlarge">XXL</option>
+                        </select>
+
+                        <!-- Drop down menu for product quantity -->
+                        <select name="Qty" id="product_dropdown">
+                            <option selected disabled hidden>Qty</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </form>
+
+                    <!-- Buy Now Button Area + Useful Links -->
+                    <a href=""><h2 class="buy_btn">BUY NOW</h2></a>
+                    <a href=""><h2 class="find">FIND NEAREST STOCKIST</h2></a>
+                    <a href="">
+                        <h2 class="share">
+                            <a href="">SHARE</a>
+                            <img src="img/Reviews/fb_social.png" width="15px" height="15px">
+                            <img src="img/Reviews/twit_social.png" width="15px" height="15px">
+                            <img src="img/Reviews/email_social.png" width="15px" height="15px">
+                        </h2>
+                    </a>
+
+                    <!-- Buy Now Paragraph about the product -->
+                    <p class="buy_para">
+                        Robot Juice bike oil for bicycles stops rust and other corrosion from starting.
+                        Applied to already corroding metals it breaks down the corrosion and starts
+                        preventing it from building up and protects from the point of contact.
+                    </p>
+
+                </div>
+
+                <!-- BORDERLINE -->
+                <div class="cell small-12" id="borderline" style="padding-top:50px;"></div>
+
+                <!-- SIMILAR PRODUCTS SECTION -->
+                <div class="cell small-12">
+                    <h2 class="sim_prod">
+                        Similar Products
+                    </h2>
+                </div>
+
+                <!-- SIMILAR PRODUCT STOCK IMAGE -->
+                <div class="cell small-2 sim">
+                    <img src="img/Similar Products/sim1.png">
+                </div>
+
+                <!-- SIMILAR PRODUCT STOCK IMAGE -->
+                <div class="cell small-2 sim">
+                    <img src="img/Similar Products/sim2.png">
+                </div>
+
+                <!-- SIMILAR PRODUCT STOCK IMAGE -->
+                <div class="cell small-2 sim">
+                    <img src="img/Similar Products/sim3.png">
+                </div>
+
+                <!-- SIMILAR PRODUCT STOCK IMAGE -->
+                <div class="cell small-2 sim">
+                    <img src="img/Similar Products/sim4.png">
+                </div>
+
+                <!-- SIMILAR PRODUCT STOCK IMAGE -->
+                <div class="cell small-2 sim">
+                    <img src="img/Similar Products/sim5.png">
+                </div>
+
+                <!-- SIMILAR PRODUCT STOCK IMAGE -->
+                <div class="cell small-2 sim">
+                    <img src="img/Similar Products/sim6.png">
+                </div>
+
+                <!-- BORDERLINE -->
+                <div class="cell small-12" id="borderline" style="padding-top:30px;"></div>
+
+                <!-- Rating images -->
+                <div class="cell small-12">
+                    <h2 class="sim_prod">
+                        Product Reviews
+
+                        <img src="img/Reviews/RedStar.png" height="20px" width="20px" style="padding-left: 10px;">
+                        <img src="img/Reviews/RedStar.png" height="20px" width="20px">
+                        <img src="img/Reviews/RedStar.png" height="20px" width="20px">
+                        <img src="img/Reviews/RedStar.png" height="20px" width="20px">
+                        <img src="img/Reviews/RedStar.png" height="20px" width="20px">
+
+                    </h2>
+
+                </div>
+
+                <!-- STATIC USER ONE -->
+                <div class="cell small-12" id="borderline-light" style="padding-top:0px;"></div><!-- BorderLine -->
+
+                <div class="cell small-2">
+                        <img src="img/Reviews/robotprof.png" class="profile_pic"><!-- Profile picture -->
+                </div>
+
+                <!-- Rating images -->
+                <div class="cell small-4">
+                    <h2 class="review_middle_main">
+                        <img src="img/Reviews/RedStar.png" height="20px" width="20px">
+                        <img src="img/Reviews/RedStar.png" height="20px" width="20px">
+                        <img src="img/Reviews/RedStar.png" height="20px" width="20px">
+                        <img src="img/Reviews/RedStar.png" height="20px" width="20px">
+                        <img src="img/Reviews/RedStar.png" height="20px" width="20px">
+                    </h2>
+
+                    <!-- REVIEW TEXT -->
+                    <h2 class="middle_reviews_text">
+                        Great Greace!!
+                    </h2>
+                </div>
+
+                <!-- Review Paragraph -->
+                <div class="cell small-6">
+                    <!-- Lorem Ipsum -->
+                    <p class="reviews_text">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                        nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim
+                        veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+                        consequat. Duis autem vel eum iriure dolor in henderit in vulputate velit esse molestie consequat,
+                        vel illum dolore eu feugiat nulla facilisis at vero eros et.
+                    </p>
+                </div>
+
+                <!-- STATIC USER TWO -->
+                <div class="cell small-12" id="borderline-light" style="padding-top:30px;"></div><!-- BorderLine -->
+
+                <div class="cell small-2">
+                    <img src="img/Reviews/robotprof.png" class="profile_pic"><!-- Profile picture -->
+                </div>
+
+                <!-- Rating images -->
+                <div class="cell small-4">
+                    <h2 class="review_middle_main">
+                        <img src="img/Reviews/RedStar.png" height="20px" width="20px">
+                        <img src="img/Reviews/RedStar.png" height="20px" width="20px">
+                        <img src="img/Reviews/RedStar.png" height="20px" width="20px">
+                        <img src="img/Reviews/BlackStar.png" height="20px" width="20px">
+                        <img src="img/Reviews/BlackStar.png" height="20px" width="20px">
+                    </h2>
+
+                    <!-- REVIEW TEXT -->
+                    <h2 class="middle_reviews_text">
+                        Great Greace!!
+                    </h2>
+                </div>
+
+                <!-- Review Paragraph -->
+                <div class="cell small-6">
+                    <!-- Lorem Ipsum -->
+                    <p class="reviews_text">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                        nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim
+                        veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+                        consequat. Duis autem vel eum iriure dolor in henderit in vulputate velit esse molestie consequat,
+                        vel illum dolore eu feugiat nulla facilisis at vero eros et.
+                    </p>
+                </div>
+                <!-- END OF TWO -->
+
+                <!-- STATIC USER THREE -->
+                <div class="cell small-12" id="borderline-light" style="padding-top:30px;"></div>
+
+                <div class="cell small-2">
+                        <img src="img/Reviews/robotprof.png" class="profile_pic">
+                </div>
+
+
+                <div class="cell small-4">
+                    <h2 class="review_middle_main">
+                        <img src="img/Reviews/RedStar.png" height="20px" width="20px">
+                        <img src="img/Reviews/RedStar.png" height="20px" width="20px">
+                        <img src="img/Reviews/RedStar.png" height="20px" width="20px">
+                        <img src="img/Reviews/RedStar.png" height="20px" width="20px">
+                        <img src="img/Reviews/BlackStar.png" height="20px" width="20px">
+                    </h2>
+
+                    <h2 class="middle_reviews_text">
+                        Great Greace!!
+                    </h2>
+                </div>
+
+                <div class="cell small-6">
+                    <!-- Lorem Ipsum -->
+                    <p class="reviews_text">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                        nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim
+                        veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+                        consequat. Duis autem vel eum iriure dolor in henderit in vulputate velit esse molestie consequat,
+                        vel illum dolore eu feugiat nulla facilisis at vero eros et.
+                    </p>
+                </div>
+                <!-- END OF THREE -->
+
+                <!-- FOUR -->
+                <div class="cell small-12" id="borderline-light" style="padding-top:30px;"></div>
+
+                <div class="cell small-2">
+                        <img src="img/Reviews/robotprofWhite.png" width="99px" height="96px" class="profile_pic">
+                </div>
+
+
+                <div class="cell small-4">
+                    <h2 class="review_middle_main">
+                        <img src="img/Reviews/RedStar.png" height="20px" width="20px">
+                        <img src="img/Reviews/RedStar.png" height="20px" width="20px">
+                        <img src="img/Reviews/RedStar.png" height="20px" width="20px">
+                        <img src="img/Reviews/RedStar.png" height="20px" width="20px">
+                        <img src="img/Reviews/RedStar.png" height="20px" width="20px">
+                    </h2>
+
+                    <h2 class="middle_reviews_text">
+                        This Juice just keeps <br/> me going...
+                    </h2>
+                </div>
+
+                <div class="cell small-6">
+                    <!-- Lorem Ipsum -->
+                    <p class="reviews_text">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                        nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim
+                        veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+                        consequat. Duis autem vel eum iriure dolor in henderit in vulputate velit esse molestie consequat,
+                        vel illum dolore eu feugiat nulla facilisis at vero eros et.
+                    </p>
+                </div>
+                <!-- END OF FOUR -->
+
+                <!-- FIVE -->
+                <div class="cell small-12" id="borderline-light" style="padding-top:30px;"></div>
+
+                <div class="cell small-2">
+                        <img src="img/Reviews/robotprof.png" width="99px" height="96px" class="profile_pic">
+                </div>
+
+
+                <div class="cell small-4">
+                    <h2 class="review_middle_main">
+                        <img src="img/Reviews/RedStar.png" height="20px" width="20px">
+                        <img src="img/Reviews/RedStar.png" height="20px" width="20px">
+                        <img src="img/Reviews/RedStar.png" height="20px" width="20px">
+                        <img src="img/Reviews/RedStar.png" height="20px" width="20px">
+                        <img src="img/Reviews/RedStar.png" height="20px" width="20px">
+                    </h2>
+
+                    <h2 class="middle_reviews_text">
+                        Great Greace!!
+                    </h2>
+                </div>
+
+                <div class="cell small-6">
+                    <!-- Lorem Ipsum -->
+                    <p class="reviews_text">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                        nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim
+                        veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+                        consequat. Duis autem vel eum iriure dolor in henderit in vulputate velit esse molestie consequat,
+                        vel illum dolore eu feugiat nulla facilisis at vero eros et.
+                    </p>
+                </div>
+                <!-- END OF FIVE -->
+
+                <!-- BLANK AREA TO BE UN-HIDDEN BY THE review.js -->
+
+                <!-- ONE -->
+                <div class="cell small-12 isBorderHidden" id="borderline-light" style="padding-top:30px;"></div>
+
+                <div class="cell small-2 isHidden">
+                    <!-- MODIFY FROM REVIEW.JS -->
+                    <img src="img/Reviews/robotprof.png" width="99px" height="96px" class="profile_pic profileimg">
+                </div>
+
+
+                <div class="cell small-4 isHidden">
+                    <h2 class="review_middle">
+                        <!-- MODIFY FROM REVIEW.JS -->
+
+                        <h2 class="middle_reviews_text middletext">
+                            <!-- APPEND FROM REVIEW.JS -->
+                        </h2>
+                    </h2>
+
+                </div>
+
+                <div class="cell small-6 isHidden">
+                    <p class="reviews_text reviewmsg">
+                        <!-- APPEND FROM REVIEW.JS -->
+                    </p>
+                </div>
+                <!-- END OF ONE -->
+
+                <!-- TWO -->
+                <div class="cell small-12 isBorderHidden" id="borderline-light" style="padding-top:30px;"></div>
+
+                <div class="cell small-2 isHidden">
+                    <!-- MODIFY FROM REVIEW.JS -->
+                    <img src="img/Reviews/robotprof.png" width="99px" height="96px" class="profile_pic profileimg">
+                </div>
+
+
+                <div class="cell small-4 isHidden">
+                    <h2 class="review_middle">
+                        <!-- MODIFY FROM REVIEW.JS -->
+
+                        <h2 class="middle_reviews_text middletext">
+                            <!-- APPEND FROM REVIEW.JS -->
+                        </h2>
+                    </h2>
+
+                </div>
+
+                <div class="cell small-6 isHidden">
+                    <p class="reviews_text reviewmsg">
+                        <!-- APPEND FROM REVIEW.JS -->
+                    </p>
+                </div>
+                <!-- END OF TWO -->
+
+                <!-- THREE -->
+                <div class="cell small-12 isBorderHidden" id="borderline-light" style="padding-top:30px;"></div>
+
+                <div class="cell small-2 isHidden">
+                    <!-- MODIFY FROM REVIEW.JS -->
+                    <img src="img/Reviews/robotprof.png" width="99px" height="96px" class="profile_pic profileimg">
+                </div>
+
+
+                <div class="cell small-4 isHidden">
+                    <h2 class="review_middle">
+                        <!-- MODIFY FROM REVIEW.JS -->
+
+                        <h2 class="middle_reviews_text middletext">
+                            <!-- APPEND FROM REVIEW.JS -->
+                        </h2>
+                    </h2>
+
+                </div>
+
+                <div class="cell small-6 isHidden">
+                    <p class="reviews_text reviewmsg">
+                        <!-- APPEND FROM REVIEW.JS -->
+                    </p>
+                </div>
+                <!-- END OF THREE -->
+
+                <!-- FOUR -->
+                <div class="cell small-12 isBorderHidden" id="borderline-light" style="padding-top:30px;"></div>
+
+                <div class="cell small-2 isHidden">
+                    <!-- MODIFY FROM REVIEW.JS -->
+                    <img src="img/Reviews/robotprof.png" width="99px" height="96px" class="profile_pic profileimg">
+                </div>
+
+
+                <div class="cell small-4 isHidden">
+                    <h2 class="review_middle">
+                        <!-- MODIFY FROM REVIEW.JS -->
+
+                        <h2 class="middle_reviews_text middletext">
+                            <!-- APPEND FROM REVIEW.JS -->
+                        </h2>
+                    </h2>
+
+                </div>
+
+                <div class="cell small-6 isHidden">
+                    <p class="reviews_text reviewmsg">
+                        <!-- APPEND FROM REVIEW.JS -->
+                    </p>
+                </div>
+                <!-- END OF FOUR -->
+
+                <!-- FIVE -->
+                <div class="cell small-12 isBorderHidden" id="borderline-light" style="padding-top:30px;"></div>
+
+                <div class="cell small-2 isHidden">
+                    <!-- MODIFY FROM REVIEW.JS -->
+                    <img src="img/Reviews/robotprof.png" width="99px" height="96px" class="profile_pic profileimg">
+                </div>
+
+
+                <div class="cell small-4 isHidden">
+                    <h2 class="review_middle">
+                        <!-- MODIFY FROM REVIEW.JS -->
+
+                        <h2 class="middle_reviews_text middletext">
+                            <!-- APPEND FROM REVIEW.JS -->
+                        </h2>
+                    </h2>
+
+                </div>
+
+                <div class="cell small-6 isHidden">
+                    <p class="reviews_text reviewmsg">
+                        <!-- APPEND FROM REVIEW.JS -->
+                    </p>
+                </div>
+                <!-- END OF FIVE -->
+
+                <!-- SIX -->
+                <div class="cell small-12 isBorderHidden" id="borderline-light" style="padding-top:30px;"></div>
+
+                <div class="cell small-2 isHidden">
+                    <!-- MODIFY FROM REVIEW.JS -->
+                    <img src="img/Reviews/robotprof.png" width="99px" height="96px" class="profile_pic profileimg">
+                </div>
+
+
+                <div class="cell small-4 isHidden">
+                    <h2 class="review_middle">
+                        <!-- MODIFY FROM REVIEW.JS -->
+
+                        <h2 class="middle_reviews_text middletext">
+                            <!-- APPEND FROM REVIEW.JS -->
+                        </h2>
+                    </h2>
+
+                </div>
+
+                <div class="cell small-6 isHidden">
+                    <p class="reviews_text reviewmsg">
+                        <!-- APPEND FROM REVIEW.JS -->
+                    </p>
+                </div>
+                <!-- END OF SIX -->
+
+                <!-- SEVEN -->
+                <div class="cell small-12 isBorderHidden" id="borderline-light" style="padding-top:30px;"></div>
+
+                <div class="cell small-2 isHidden">
+                    <!-- MODIFY FROM REVIEW.JS -->
+                    <img src="img/Reviews/robotprof.png" width="99px" height="96px" class="profile_pic profileimg">
+                </div>
+
+
+                <div class="cell small-4 isHidden">
+                    <h2 class="review_middle">
+                        <!-- MODIFY FROM REVIEW.JS -->
+
+                        <h2 class="middle_reviews_text middletext">
+                            <!-- APPEND FROM REVIEW.JS -->
+                        </h2>
+                    </h2>
+
+                </div>
+
+                <div class="cell small-6 isHidden">
+                    <p class="reviews_text reviewmsg">
+                        <!-- APPEND FROM REVIEW.JS -->
+                    </p>
+                </div>
+                <!-- END OF SEVEN -->
+
+                <!-- EIGHT -->
+                <div class="cell small-12 isBorderHidden" id="borderline-light" style="padding-top:30px;"></div>
+
+                <div class="cell small-2 isHidden">
+                    <!-- MODIFY FROM REVIEW.JS -->
+                    <img src="img/Reviews/robotprof.png" width="99px" height="96px" class="profile_pic profileimg">
+                </div>
+
+
+                <div class="cell small-4 isHidden">
+                    <h2 class="review_middle">
+                        <!-- MODIFY FROM REVIEW.JS -->
+
+                        <h2 class="middle_reviews_text middletext">
+                            <!-- APPEND FROM REVIEW.JS -->
+                        </h2>
+                    </h2>
+
+                </div>
+
+                <div class="cell small-6 isHidden">
+                    <p class="reviews_text reviewmsg">
+                        <!-- APPEND FROM REVIEW.JS -->
+                    </p>
+                </div>
+                <!-- END OF EIGHT -->
+
+                <!-- NINE -->
+                <div class="cell small-12 isBorderHidden" id="borderline-light" style="padding-top:30px;"></div>
+
+                <div class="cell small-2 isHidden">
+                    <!-- MODIFY FROM REVIEW.JS -->
+                    <img src="img/Reviews/robotprof.png" width="99px" height="96px" class="profile_pic profileimg">
+                </div>
+
+
+                <div class="cell small-4 isHidden">
+                    <h2 class="review_middle">
+                        <!-- MODIFY FROM REVIEW.JS -->
+
+                        <h2 class="middle_reviews_text middletext">
+                            <!-- APPEND FROM REVIEW.JS -->
+                        </h2>
+                    </h2>
+
+                </div>
+
+                <div class="cell small-6 isHidden">
+                    <p class="reviews_text reviewmsg">
+                        <!-- APPEND FROM REVIEW.JS -->
+                    </p>
+                </div>
+                <!-- END OF NINE -->
+
+                <!-- TEN -->
+                <div class="cell small-12 isBorderHidden" id="borderline-light" style="padding-top:30px;"></div>
+
+                <div class="cell small-2 isHidden">
+                    <!-- MODIFY FROM REVIEW.JS -->
+                    <img src="img/Reviews/robotprof.png" width="99px" height="96px" class="profile_pic profileimg">
+                </div>
+
+
+                <div class="cell small-4 isHidden">
+                    <h2 class="review_middle">
+                        <!-- MODIFY FROM REVIEW.JS -->
+
+                        <h2 class="middle_reviews_text middletext">
+                            <!-- APPEND FROM REVIEW.JS -->
+                        </h2>
+                    </h2>
+
+                </div>
+
+                <div class="cell small-6 isHidden">
+                    <p class="reviews_text reviewmsg">
+                        <!-- APPEND FROM REVIEW.JS -->
+                    </p>
+                </div>
+                <!-- END OF TEN -->
+
+                <!-- ELEVEN -->
+                <div class="cell small-12 isBorderHidden" id="borderline-light" style="padding-top:30px;"></div>
+
+                <div class="cell small-2 isHidden">
+                    <!-- MODIFY FROM REVIEW.JS -->
+                    <img src="img/Reviews/robotprof.png" width="99px" height="96px" class="profile_pic profileimg">
+                </div>
+
+
+                <div class="cell small-4 isHidden">
+                    <h2 class="review_middle">
+                        <!-- MODIFY FROM REVIEW.JS -->
+
+                        <h2 class="middle_reviews_text middletext">
+                            <!-- APPEND FROM REVIEW.JS -->
+                        </h2>
+                    </h2>
+
+                </div>
+
+                <div class="cell small-6 isHidden">
+                    <p class="reviews_text reviewmsg">
+                        <!-- APPEND FROM REVIEW.JS -->
+                    </p>
+                </div>
+                <!-- END OF ELEVEN -->
+
+                <!-- END OF BLANK AREA FOR REVIEW EXTENSION -->
+
+                <!-- Button Area -->
+                <div class="cell small-12" id="borderline-light" style="padding-top:30px;"></div>
+
+                <!-- MANUAL TRIGGER -->
+
+                <div class="cell small-5"></div>
+                <div class="cell small-2" id="isBtnHidden">
+                    <button onclick="handleReviews()" id="buttonsub"><h3 class="ReviewsButton">READ ALL REVIEWS</h3></button>
+                </div>
+                <div class="cell small-5"></div>
+
+            </div>
+
+        </div>
+
+         <!-- BORDERLINE -->
+         <div id="borderline"></div>
+
+         <!-- Footer -->
+         <div class="footer" style="background-color: white;">
+             <br/><br/>
+
+             <div class="grid-container">
+                 <div class="grid-x">
+
+                     <div class="cell small-4">
+                         <img src="img/magazine.png">
+                     </div>
+
+                     <div class="cell small-3">
+                         <header class="footer_heading">
+                             Latest Reviews
+                         </header>
+                         <p class="footer_heading para">
+                             Cycling magazine has given Robot Juice a 5 star rating in
+                             its latest reviews of dry lubricants.
+                             Robot Juice Dry lube was the rated
+                             highest out of over 40 top brand dry lubes.
+                         </p>
+                     </div>
+
+                     <div class="cell small-2"></div>
+
+                     <div class="cell small-3">
+                         <header class="footer_heading">
+                             Links
+                         </header>
+
+                         <br/>
+
+                         <a href="">Edge Hill University<br/><br/></a>
+                         <a href="">Dave Walsh<br/><br/></a>
+                         <a href="">https://twitter.com/walsh_d<br/><br/></a>
+                         <a href="">CIS2120 - Designing for web standards module</a>
+
+                     </div>
+
+                 </div>
+             </div>
+
+             <!-- BORDERLINE -->
+             <div id="borderline"></div>
+         </div>
+
+
+         <!-- BOTTOM OF THE PAGE -->
+         <div class="footer_bottom" style="background-color: #c8110b;">
+             <div class="grid-container">
+                 <div class="grid-x">
+                     <div class="cell small-7">
+                         <p class="footer_heading para2">
+                             Robot Juice Ficticious Products Not Ltd., Unit 9¾, Privet Drive, Little Whinegeing, Surrey DN18 5RP
+                             <br/>
+                             <br/>
+                             Telephone: +44 (0)1695 657648, Email: walshd@edgehill.ac.uk
+                             <br/>
+                             <br/>
+                             <br/>
+                             <br/>
+                             <br/>
+                             <br/>
+                             <br/>
+                             <br/>
+                         </p>
+                     </div>
+
+                     <div class="cell small-5">
+                         <p class="footer_heading para2">
+                             <a href="">Contact Us</a> | <a href="">Privacy</a> | <a href="">Terms & Conditions</a> | <a href="">Accessibility</a>
+                             <br/>
+                             <br/>
+                             Copyright © 2012 Dave Walsh, Design by Dave Walsh
+                         </p>
+                     </div>
+
+                 </div>
+             </div>
+         </div>
+
+        </div>
+
+    </body>
+</html>

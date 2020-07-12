@@ -1,0 +1,349 @@
+﻿<!--
+    File: index.html
+    Name: Jordan McCann
+    Student ID: 23571144
+-->
+
+<!-- This is the home page -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>  <!-- Head Section _ Deals with external configs / dependencies that the page needs-->
+
+        <!-- Sets the browser tab title -->
+        <title>ROBOT JUICE - HOME</title>
+
+        <!-- CSS IMPORTS -->
+
+        <link rel="stylesheet" href="grid.css"> <!-- 12 grid layout format -->
+        <link href="https://fonts.googleapis.com/css?family=Iceberg" rel="stylesheet"> <!-- Google font -->
+        <link rel="stylesheet" href="style.css"> <!-- Used to style the page -->
+
+        <!-- JS IMPORTS -->
+        <script src="poll.js"></script><!-- loads poll functionality -->
+
+    </head>
+
+    <body>
+        <div class="grid-container"> <!-- All content will be inside here, as the grid-container class manages the layout-->
+            <div class="grid-x">
+
+                <!-- Logo / Header Area -->
+                <div class="cell small-4">
+                    <header class="logo">
+                        <img src="img/logo.png" width="100%" alt="HeroImg">
+                    </header>
+                </div>
+
+                <div class="cell small-8" style="font-size: 0;"> <!-- SPACER -->
+                    8 celled Spacer
+                </div>
+
+                <!-- Top Border -->
+                <div class="cell small-12" id="top_border"></div>
+
+                <!-- NAVIGATION BAR -->
+                <a href="index.html" class="cell small-2 navbar navdivider" id="selected"><p>Home</p></a>
+                <a href="product.html" class="cell small-2 navbar navdivider" ><p>Products</p></a>
+                <a href="" class="cell small-2 navbar navdivider"><p>Protect</p></a>
+                <a href="" class="cell small-2 navbar navdivider"><p>Stockists</p></a>
+                <a href="" class="cell small-2 navbar navdivider"><p>Events</p></a>
+                <a href="" class="cell small-2 navbar"><p>Reviews</p></a>
+
+                <!--Large image body -->
+                <div class="cell small-12">
+                    <img src="img/robotindex.png" width="100%;" alt="Robot img">
+                </div>
+
+                <!-- Grey Border Bar at the bottom of the image ^ -->
+                <div class="cell small-12 picborderbar"></div>
+
+                <!-- Heading Text -->
+                <div class="cell small-12 headingtext">
+                    Robot Juice is the ultimate ficticious bicycle and motorcycle lubricant oils
+                </div>
+
+                <!-- BORDERLINE -->
+                <div class="cell small-12" id="borderline"></div>
+
+                <!-- Picture area -->
+                <div class="grid-x" id="picturearea">
+                    <div class="cell small-3">
+                        <img src="img/bikechain.png" width="200" height="150" class="picturespace _img" alt="bikechain img">
+                        <h1 class="picsection">Bike Oil</h1>
+                        <p class="text">
+                            Stops and protects against rust, reduces friction on moving parts
+                            and is essential on any cycle
+                        </p>
+                    </div>
+
+                    <div class="cell small-3">
+                        <img src="img/bicycle.png" width="200" height="150" class="picturespace sec _img" alt="bicycle img">
+                        <h1 class="picsection">Dry Lubricant</h1>
+                        <p class="text">
+                                Perfect chain lubricant for any road riding.
+                                Resists water penetration and wash-off easily.
+                        </p>
+                    </div>
+
+                    <div class="cell small-3">
+                        <img src="img/bikelube.png" width="200" height="150" class="picturespace sec _img" alt="bike lube img">
+                        <h1 class="picsection">Wet Lubricant</h1>
+                        <p class="text">
+                            A thick, heavy duty lube designed to stick to the chain in wet conditions.
+                            Ideal for extreme weather and long distance riding.
+                        </p>
+                    </div>
+
+                    <div class="cell small-3">
+                        <img src="img/pen.png" width="200" height="150" class="picturespace sec _img" alt="pen img"> 
+                        <h1 class="picsection">Product Reviews</h1>
+                        <p class="text">
+                            Read what the press and
+                            our customers say about
+                            our excellent products.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- BORDERLINE -->
+                <div class="cell small-12" id="borderline"></div>
+
+                <!-- Latest news and poll section -->
+                <div class="grid-x">
+                    <!-- NEWS SECTION -->
+                    <div class="cell small-8">
+                        <div class="grid-y">
+                            <br/><br/>
+                            <h2 class="latestnewsheader">Latest News</h2>
+                            <h3 class="newsitem">News item one!</h3>
+                            <p class="text subsection">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                                laoreet dolore magna aliquam erat volutpat. Ut wisi enum ad minim veniam, quis nostrud exerci tation
+                                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure.
+
+                                <div class="grid-y">
+                                    <div class="grid-x">
+                                        <div class="cell small-9">
+                                        </div>
+
+                                        <div class="cell small-3">
+                                            <i class="date">September, 2012</i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </p>
+
+                            <h3 class="newsitem">News item two!</h3>
+                            <p class="text subsection">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                                laoreet dolore magna aliquam erat volutpat. Ut wisi enum ad minim veniam, quis nostrud exerci tation
+                                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure.
+
+                                <div class="grid-y">
+                                        <div class="grid-x">
+                                            <div class="cell small-9">
+                                            </div>
+
+                                            <div class="cell small-3">
+                                                <i class="date">September, 2012</i>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </p>
+
+
+                            <h3 class="newsitem">News item three!</h3>
+                                <p class="text subsection">
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                                    laoreet dolore magna aliquam erat volutpat. Ut wisi enum ad minim veniam, quis nostrud exerci tation
+                                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure.
+
+                                    <div class="grid-y">
+                                        <div class="grid-x">
+                                            <div class="cell small-9"></div>
+
+                                            <div class="cell small-3">
+                                                <i class="date">September, 2012</i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </p>
+
+                            </div>
+
+
+                        </div>
+
+                        <!-- POLL SECTION -->
+                        <div class="cell small-4">
+                            <div class="grid-y">
+                                <br/><br/>
+                                <div class="poll">
+                                    <h2 class="latestnewsheader poll">Reader Poll</h2>
+
+                                    <p class=" polltext1">
+                                        Are Robot Juice the best and most usable and accessible fake oils around?
+                                    </p>
+
+                                    <br/>
+
+                                    <form class="inputRadioButtons">
+
+                                        <!-- Load sounds to be used on the page -->
+                                        <!-- Triggered by clicking a radio button -->
+                                        <!-- Handled by poll.js -->
+                                        <audio id="TaDaSound">
+                                            <source src="sounds/tada.mp3" type="audio/mpeg">
+                                                Your Browser does not support this audio element
+                                        </audio>
+
+                                        <audio id="BooSound">
+                                            <source src="sounds/boo.mp3" type="audio/mpeg">
+                                                Your Browser does not support this audio element
+                                        </audio>
+
+                                        <!-- Radio Button 1 + Text -->
+                                        <input type="radio" name="yesRadio" value="Yes" id="btn1" class="radioSection btns">
+                                        <strong class="radioSection">Yes</strong>
+
+                                        <!-- Break tags to act as spacers -->
+                                        <br/>
+                                        <br/>
+                                        <br/>
+
+                                        <!-- Radio Button 2 + Text -->
+                                        <input type="radio" name="noRadio" value="No" id="btn2" class="radioSection btns">
+                                        <strong class="radioSection">No</strong>
+
+                                        <!-- Break tags to act as spacers -->
+                                        <br/>
+                                        <br/>
+                                    </form>
+
+                                    <br/>
+
+                                    <h2 class="latestnewsheader poll">Competition</h2>
+
+                                    <p class=" polltext2">
+                                        Win absolutely nothing by entering this extremely expensive competition.
+                                        Robot Juice will not send you a full range of our cycling and motorcycle oils
+                                        and lubricants as we do not exist. But just or fun...
+                                    </p>
+
+                                    <p class="polltext2">
+                                        Which film is our address made up from?
+                                    </p>
+
+                                    <p class="polltext2">
+                                        a) Armageddon
+                                        <br/>
+                                        b) Harry Potter
+                                        <br/>
+                                        c) The simpsons (Movie)
+                                    </p>
+
+                                    <p class="polltext2">
+                                        answers on a postcard please
+                                    </p>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        <!-- BORDERLINE -->
+        <div id="borderline"></div>
+
+        <!-- Footer -->
+        <div class="footer" style="background-color: white;">
+            <br/><br/>
+
+            <div class="grid-container">
+                <div class="grid-x">
+
+                    <div class="cell small-4">
+                        <img src="img/magazine.png" alt="magazine picture">
+                    </div>
+
+                    <div class="cell small-3">
+                        <header class="footer_heading">
+                            Latest Reviews
+                        </header>
+                        <p class="footer_heading para">
+                            Cycling magazine has given Robot Juice a 5 star rating in
+                            its latest reviews of dry lubricants.
+                            Robot Juice Dry lube was the rated
+                            highest out of over 40 top brand dry lubes.
+                        </p>
+                    </div>
+
+                    <div class="cell small-2"></div>
+
+                    <div class="cell small-3">
+                        <header class="footer_heading">
+                            Links
+                        </header>
+
+                        <br/>
+
+                        <a href="">Edge Hill University<br/><br/></a>
+                        <a href="">Dave Walsh<br/><br/></a>
+                        <a href="">https://twitter.com/walsh_d<br/><br/></a>
+                        <a href="">CIS2120 - Designing for web standards module</a>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- BORDERLINE -->
+            <div id="borderline"></div>
+        </div>
+
+
+        <!-- BOTTOM OF THE PAGE -->
+        <div class="footer_bottom" style="background-color: #c8110b;">
+            <div class="grid-container">
+                <div class="grid-x">
+                    <div class="cell small-7">
+                        <p class="footer_heading para2">
+                            Robot Juice Ficticious Products Not Ltd., Unit 9¾, Privet Drive, Little Whinegeing, Surrey DN18 5RP
+                            <br/>
+                            <br/>
+                            Telephone: +44 (0)1695 657648, Email: walshd@edgehill.ac.uk
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                        </p>
+                    </div>
+
+                    <div class="cell small-5">
+                        <p class="footer_heading para2">
+                            <a href="">Contact Us</a> | <a href="">Privacy</a> | <a href="">Terms & Conditions</a> | <a href="">Accessibility</a>
+                            <br/>
+                            <br/>
+                            Copyright © 2012 Dave Walsh, Design by Dave Walsh
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
